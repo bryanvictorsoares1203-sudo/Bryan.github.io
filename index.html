@@ -1,0 +1,115 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Amor ❤️</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 900px;
+  background: rgba(255,255,255,0.05);
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  backdrop-filter: blur(15px);
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 300;
+  margin-bottom: 30px;
+  color: #ffb6c1;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.clock {
+  margin-top: 30px;
+  font-size: 1.3rem;
+  background: rgba(255,255,255,0.1);
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.heart {
+  font-size: 2rem;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Para o meu amor ❤️</h1>
+    <h2>Desde 26 de Fevereiro de 2026</h2><p>
+  Meu amor, desde o dia em que você entrou na minha vida, tudo começou a fazer mais sentido.
+  Cada conversa, cada risada, cada momento ao seu lado tem sido especial de um jeito que eu nunca senti antes.
+</p>
+
+<p>
+  Mesmo a gente ainda não tendo um nome definido para o que somos, eu sinto que é algo verdadeiro, algo forte,
+  algo que cresce a cada dia. Você se tornou não só alguém que eu gosto, mas alguém que eu preciso ter por perto.
+</p>
+
+<p>
+  Eu admiro tudo em você, seu jeito, sua forma de falar, de sorrir, e principalmente o jeito que você me faz sentir.
+  Você é minha melhor companhia, minha paz e ao mesmo tempo a razão do meu coração bater mais forte.
+</p>
+
+<p>
+  Eu quero continuar vivendo tudo isso com você, criando memórias, compartilhando momentos
+  e construindo algo cada vez mais bonito entre a gente.
+</p>
+
+<p>
+  Eu te amo, meu amor. ❤️
+</p>
+
+<div class="clock" id="clock"></div>
+
+  </div>  <script>
+    const startDate = new Date("2026-02-26T00:00:00");
+
+    function updateClock() {
+      const now = new Date();
+      const diff = now - startDate;
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((diff / (1000 * 60)) % 60);
+      const seconds = Math.floor((diff / 1000) % 60);
+
+      document.getElementById("clock").innerHTML =
+        `Estamos juntos há:<br><strong>${days} dias, ${hours} horas, ${minutes} minutos e ${seconds} segundos</strong>`;
+    }
+
+    setInterval(updateClock, 1000);
+    updateClock();
+  </script></body>
+</html>
